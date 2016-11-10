@@ -30,7 +30,7 @@ namespace CircuitBreakerPattern.Switch.UnitTests
         public void Switch_calls_secondary_action_silently_when_default_action_fails()
         {
             // arrange
-            sut.Attempt(failingAction).Otherwise(secondryAction);
+            sut.TryFirst(failingAction).Otherwise(secondryAction);
 
             // act
             sut.Execute();
@@ -45,7 +45,7 @@ namespace CircuitBreakerPattern.Switch.UnitTests
             // arrange
             var result = string.Empty;
             Action secondryAction = () => { result = "Nothing to see here" + DateTime.UtcNow.Ticks; };
-            sut.Attempt(failingAction).Otherwise(secondryAction);
+            sut.TryFirst(failingAction).Otherwise(secondryAction);
 
             // act & assert
             Assert.True(circuitBreaker.IsClosed);
@@ -72,7 +72,7 @@ namespace CircuitBreakerPattern.Switch.UnitTests
             // arrange
             var result = string.Empty;
             Action secondryAction = () => { result = "Nothing to see here" + DateTime.UtcNow.Ticks; };
-            sut.Attempt(failingAction).Otherwise(secondryAction);
+            sut.TryFirst(failingAction).Otherwise(secondryAction);
             circuitBreaker.OpenToHalfOpenWaitTime = TimeSpan.FromMilliseconds(200);
 
             // act
@@ -84,7 +84,7 @@ namespace CircuitBreakerPattern.Switch.UnitTests
             t.Interval = circuitBreaker.OpenToHalfOpenWaitTime.Milliseconds * 2;
             t.Elapsed += (sender, args) =>
             {
-                sut.Attempt(() => result = "Success");
+                sut.TryFirst(() => result = "Success");
                 Assert.Equal("Success", result);
             };
             t.Start();

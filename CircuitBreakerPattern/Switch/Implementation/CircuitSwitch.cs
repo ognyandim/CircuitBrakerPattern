@@ -15,7 +15,7 @@ namespace CircuitBreakerPattern.Switch.Implementation
             _circuitBreaker = circuitBreaker;
             _eventLogger = eventLogger;
         }
-        public ICircuitSwitch Attempt(Action action)
+        public ICircuitSwitch TryFirst(Action action)
         {
             _firstAction = action;
             return this;
