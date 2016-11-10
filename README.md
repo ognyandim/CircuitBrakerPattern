@@ -1,4 +1,4 @@
-# CircuitBrakerPattern
+# Circuit Braker augmented to Circuit Switch
 Experimenting with circuit breaker pattern. 
 
 ## Why 
