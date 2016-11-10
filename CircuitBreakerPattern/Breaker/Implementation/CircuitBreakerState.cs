@@ -1,4 +1,4 @@
-﻿namespace CircuitBreakerPattern.Breaker
+﻿namespace CircuitBreakerPattern.Breaker.Implementation
 {
     public enum CircuitBreakerState
     {

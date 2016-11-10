@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics;
 
-namespace CircuitBreakerPattern.Breaker
+namespace CircuitBreakerPattern
 {
     public class EventLogger : IEventLogger
     {

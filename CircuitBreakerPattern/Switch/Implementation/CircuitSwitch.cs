@@ -1,7 +1,7 @@
 ﻿using System;
 using CircuitBreakerPattern.Breaker;
 
-namespace CircuitBreakerPattern.Switch
+namespace CircuitBreakerPattern.Switch.Implementation
 {
     public class CircuitSwitch : ICircuitSwitch
     {
@@ -40,6 +40,7 @@ namespace CircuitBreakerPattern.Switch
                 {
                     _firstAction.Invoke();
                 });
+                return;
             }
             catch (Exception ex)
             {

@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using CircuitBreakerPattern.Breaker.Implementation;
 using Moq;
 using Xunit;
 using Timer = System.Timers.Timer;
 
-namespace CircuitBreakerPattern.Breaker.Tests
+namespace CircuitBreakerPattern.Breaker.UnitTests
 {
 
     public class CircuitBreakerTests

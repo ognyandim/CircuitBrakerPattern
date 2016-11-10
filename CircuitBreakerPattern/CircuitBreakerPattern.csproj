@@ -73,11 +73,11 @@
     <Compile Include="EventLogger.cs" />
     <Compile Include="Breaker\ICircuitBreakerStateStore.cs" />
     <Compile Include="IEventLogger.cs" />
-    <Compile Include="Breaker\Tests\CircuitBreakerTests.cs" />
+    <Compile Include="Breaker\UnitTests\CircuitBreakerTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Switch\Implementation\CircuitSwitch.cs" />
     <Compile Include="Switch\ICircuitSwitch.cs" />
-    <Compile Include="Switch\Tests\CircuitSwitchTests.cs" />
+    <Compile Include="Switch\UnitTests\CircuitSwitchTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

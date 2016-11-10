@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CircuitBreakerPattern.Breaker
+namespace CircuitBreakerPattern.Breaker.Implementation
 {
     [Serializable]
     public class CircuitBreakerOpenException : Exception

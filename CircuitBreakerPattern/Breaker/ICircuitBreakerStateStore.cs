@@ -1,4 +1,5 @@
 ﻿using System;
+using CircuitBreakerPattern.Breaker.Implementation;
 
 namespace CircuitBreakerPattern.Breaker
 {

@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Timers;
 using CircuitBreakerPattern.Breaker;
+using CircuitBreakerPattern.Breaker.Implementation;
+using CircuitBreakerPattern.Switch.Implementation;
 using Xunit;
 
-namespace CircuitBreakerPattern.Switch.Tests
+namespace CircuitBreakerPattern.Switch.UnitTests
 {
     public class CircuitSwitchTests
     {

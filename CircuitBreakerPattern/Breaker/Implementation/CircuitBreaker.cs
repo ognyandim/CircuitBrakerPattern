@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading;
 
-namespace CircuitBreakerPattern.Breaker
+namespace CircuitBreakerPattern.Breaker.Implementation
 {
     public class CircuitBreaker : ICircuitBreaker
     {
