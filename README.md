@@ -24,7 +24,7 @@ Because I was interested in implementing **distractless and quick fallback** wit
 it became not a true circuit breaker so I decided to call it a Circuit Switch. If you find it interesting I will be glad to discuss it.
 
 ## Resources
-I found useful on my way of studying about Retry and Circuit Breaker patterns.
+I found some useful articles and blog posts on my way of studying about Retry and Circuit Breaker patterns.
 
 1. [Transient Fault Handling (Building Real-World Cloud Apps with Azure)](https://www.asp.net/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/transient-fault-handling)
 2. [Retry pattern](https://msdn.microsoft.com/en-us/library/dn589788.aspx)
